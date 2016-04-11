@@ -1,2 +1,2 @@
 # Ridiculous-Answers
-A simple web app that gives you ridiculous answers to your questions.
+Go to the gh-pages branch to find the code!
