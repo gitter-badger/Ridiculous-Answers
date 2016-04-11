@@ -1,6 +1,6 @@
 {
-  "name": "Ridiculous-answers",
+  "name": "Ridiculous-Answers",
   "tagline": "A simple web app that gives you ridiculous answers to your questions.",
-  "body": "<html>\r\n<head>\r\n<script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n<script>\r\nfunction shuffle(array) {\r\n  var currentIndex = array.length, temporaryValue, randomIndex;\r\n  // While there remain elements to shuffle...\r\n  while (0 !== currentIndex) {\r\n    // Pick a remaining element...\r\n    randomIndex = Math.floor(Math.random() * currentIndex);\r\n    currentIndex -= 1;\r\n    // And swap it with the current element.\r\n    temporaryValue = array[currentIndex];\r\n    array[currentIndex] = array[randomIndex];\r\n    array[randomIndex] = temporaryValue;\r\n  }\r\n  return array;\r\n}\r\nvar arr = [\"Bake more cookies!\", \"Eat more bacon!\", \"Download malware!\", \"Blow it up!\"];\r\nshuffle(arr);\r\n</script>\r\n</head>\r\n<body>\r\n<input type=\"text\"/>\r\n<input onclick='responsiveVoice.speak(arr[0]);' type='button' value='🔊 Get Answer' />\r\n</body>\r\n</html>",
+  "body": "# Ridiculous-Answers\r\nA simple web app that gives you ridiculous answers to your questions.",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
