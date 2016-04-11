@@ -22,10 +22,14 @@ function shuffle(array) {
 }
 var arr = ["Bake more cookies!", "Eat more bacon!", "Download malware!", "Eat cake!", "Beans beans the magical fruit... Maybe that would help?", "Here, go to a doctor and then, after visiting, eat donuts!"];
 shuffle(arr);
+function speak(){
+  responsiveVoice.speak(arr[0]);
+  shuffle(arr);
+}
 </script>
 </head>
 <body>
 <input type="text"/>
-<input onclick='responsiveVoice.speak(arr[0]);' type='button' value='🔊 Get Answer' />
+<input onclick='speak()' type='button' value='🔊 Get Answer' />
 </body>
 </html>
